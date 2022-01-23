@@ -1,0 +1,13 @@
+psql
+create database shop 
+\c shop
+shop=# create table customer( #создаём таблицу клиентов и ( заполняем поля в этой таблице
+shop(# id serial primary key, #задаём поле id (serial primary key-делаем это поле уникальным)
+shop(# name varchar(255), #создаём поле name с максимальной длиной символов 255
+shop(# phone varchar(30),
+shop(# email varchar(255)
+shop(# ); #закрывем нашу таблицу
+CREATE TABLE
+shop=# \d #просмотр таблиц
+shop=# \d customer #просмотр полей таблицы customer
+

@@ -1,0 +1,17 @@
+sudo apt-get install postgresql postgresql-contrib
+sudo -i -u postgres #заходи под пользователем postgres
+psql #открытие консоли postgres
+\l #вывод списка баз данных в консоли postgres
+\q #выход из консоли postgres
+createdb test_db #создание новой базы данных (не в консоли Postgres)
+dropdb test_db #удаление созданной ранее базы данных (не в консоли postgres)
+psql
+ALTER USER postgres WITH PASSWORD 'test'; #изменяем пароль пользователю postgres
+\du #вывод списка пользователей
+CREATE USER new WITH PASSWORD 'new'; #создание нового пользователя
+ALTER USER new WITH SUPERUSER; #выдача root прав пользователю new
+DROP USER new; #удаление пользователя new
+CREATE DATABASE new;#создание базы данных в консоле postrges
+GRANT ALL PRIVILEGES ON DATABASE new to new;#назначение всех прав пользователю new на базу данных new
+
+

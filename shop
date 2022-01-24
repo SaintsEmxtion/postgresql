@@ -33,6 +33,7 @@ product_id integer references product(id));
 insert into customer(name,phone,email) values ('Петр', '111', '123@mail.ru'); #добавляем в таблицу клиентов имя клиента и т.д
 select * from customer; #вывод данных клиентов с базы customer
 
+select * from product_photo pp; #Назначение таблице product_photo алиаса pp
 
 
 

@@ -35,6 +35,8 @@ select * from customer; #вывод данных клиентов с базы cu
 
 select * from product_photo pp; #Назначение таблице product_photo алиаса pp
 
+select pp.*, p.name from product_photo pp left join product p on p.id=pp.product_id; #данной командой мы соединяем 2 таблицы. А именно продукт и фото продукта
+
 
 
 

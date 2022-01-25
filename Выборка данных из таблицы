@@ -1,0 +1,8 @@
+select name from new; #Вывод столбца name из таблицы new
+select * from new; #Вывод всех столбцов из таблицы new
+select * from new order by country; #вывод всех столбцов таблицы new и их сортировка по стране
+select * from new order by country desc; #Сортировка данных по алфавиту
+select * from test where name = 'Pavel'; #Вывод строки, где стоблец name равен значению Pavel
+select * from test where name = 'Pavel' and secondname = 'Shchulepov'; #Вывод стоблца name с значением Pavel и secondname = 'Shchulepov'
+
+

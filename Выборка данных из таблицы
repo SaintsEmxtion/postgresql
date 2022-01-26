@@ -5,6 +5,8 @@ select * from new order by country desc; #Сортировка данных по
 select * from test where name = 'Pavel'; #Вывод строки, где стоблец name равен значению Pavel
 select * from test where name = 'Pavel' and secondname = 'Shchulepov'; #Вывод стоблца name с значением Pavel и secondname = 'Shchulepov'
 select * from test where name = 'Pavel' or name = 'Jonh' or name = 'Jack' === select * from test wher name in ('Pavel', 'Jonh', 'Jack')
+select max(price) from test; #Вывод самого большого значения из колонки price
+
 
 
 

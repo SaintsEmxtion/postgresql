@@ -1,0 +1,5 @@
+select name, title from persons join position on position_id=position(id) #Вывод двух стобцов name и title из таблиц persons и position и сопостовление name с title
+left join - вывод полного стоблца из левой таблицы (т.е вывод стобца name будет полным, даже если в стоблце title нет сопостовления id с name)
+rigt join - это же, только про правую таблицу (в пустых сопостовлениях выведет null)
+inner join - показывает те записи, для которых были найдены пары
+full join - выводит все записи из обоих стобцов

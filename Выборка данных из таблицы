@@ -6,7 +6,8 @@ select * from test where name = 'Pavel'; #Вывод строки, где сто
 select * from test where name = 'Pavel' and secondname = 'Shchulepov'; #Вывод стоблца name с значением Pavel и secondname = 'Shchulepov'
 select * from test where name = 'Pavel' or name = 'Jonh' or name = 'Jack' === select * from test wher name in ('Pavel', 'Jonh', 'Jack')
 select max(price) from test; #Вывод самого большого значения из колонки price
-
+delete from test where id=3 #Удалить столбец с id равным трём из таблицы test
+update test set name=test where id=3 #добавление 
 
 
 
